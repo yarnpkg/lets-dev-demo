@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "start": "babel-node index.js",
+    "install-self": "rm -rf temp && babel-node index . temp && rm -rf node_modules && mv temp/node_modules node_modules && rmdir temp"
+  },
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "fs-extra": "^3.0.1",
+    "gunzip-maybe": "^1.4.1",
+    "node-fetch": "^1.7.1",
+    "progress": "^2.0.0",
+    "promise-limit": "^2.4.0",
+    "semver": "^5.3.0",
+    "tar-fs": "^1.15.3",
+    "tar-stream": "^1.5.4"
+  }
+}
