@@ -26,7 +26,7 @@ async function fetchPackage({name, reference}) {
 /////////////////////
 // --- Chapter 2 ---
 
-async function getPinnedReference({name, reference}) {
+export async function getPinnedReference({name, reference}) {
 
     // 1.0.0 is a valid range per semver syntax, but since it's also a pinned
     // reference, we don't actually need to process it. Less work, yeay!~
@@ -54,7 +54,7 @@ async function getPinnedReference({name, reference}) {
 
 import {readPackageJsonFromArchive} from './utilities';
 
-async function getPackageDependencies({name, reference}) {
+export async function getPackageDependencies({name, reference}) {
 
     let packageBuffer = await fetchPackage({name, reference});
     let packageJson = JSON.parse(await readPackageJsonFromArchive(packageBuffer));
