@@ -1,5 +1,7 @@
 # Let's Dev: A Package Manager
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/yarnpkg/lets-dev-demo.svg)](https://greenkeeper.io/)
+
 > This project has been created to showcase the [article of the same name ](). It is not an alternate package manager, and we do not plan to support it in the future.
 
 ## Installation
