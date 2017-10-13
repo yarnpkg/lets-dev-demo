@@ -1,6 +1,6 @@
 # Let's Dev: A Package Manager
 
-> This project has been created to showcase the [article of the same name ](). It is not an alternate package manager, and we do not plan to support it in the future.
+> This project has been created to showcase the [article of the same name ](https://yarnpkg.com/blog/2017/07/11/lets-dev-a-package-manager/). It is not an alternate package manager, and we do not plan to support it in the future.
 
 ## Installation
 
