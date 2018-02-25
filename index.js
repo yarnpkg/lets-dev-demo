@@ -29,7 +29,7 @@ async function fetchPackage({name, reference}) {
 export async function getPinnedReference({name, reference}) {
 
     // 1.0.0 is a valid range per semver syntax, but since it's also a pinned
-    // reference, we don't actually need to process it. Less work, yeay!~
+    // reference, we don't actually need to process it. Less work, yay!~
     if (semver.validRange(reference) && !semver.valid(reference)) {
 
         let response = await fetch(`https://registry.yarnpkg.com/${name}`);
