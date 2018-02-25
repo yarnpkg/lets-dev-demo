@@ -122,7 +122,7 @@ export async function extractNpmArchiveTo(packageBuffer, target) {
 
 export async function trackProgress(cb) {
 
-    let pace = new Progress(`:bar :current/:total (:elapseds)`, {width: 80, total: 1});
+    let pace = new Progress(`:bar :current/:total (:elapsed)`, {width: 80, total: 1});
 
     try {
 

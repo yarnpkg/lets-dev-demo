@@ -29,7 +29,7 @@ async function fetchPackage({name, reference}) {
 export async function getPinnedReference({name, reference}) {
 
     // 1.0.0 is a valid range per semver syntax, but since it's also a pinned
-    // reference, we don't actually need to process it. Less work, yeay!~
+    // reference, we don't actually need to process it. Less work, yay!~
     if (semver.validRange(reference) && !semver.valid(reference)) {
 
         let response = await fetch(`https://registry.yarnpkg.com/${name}`);
@@ -219,7 +219,7 @@ function optimizePackageTree({name, reference, dependencies}) {
 
             // If we've adopted the sub-dependency, or if the already existing
             // dependency has the exact same reference than the sub-dependency,
-            // then it becames useless and we can simply delete it.
+            // then it becomes useless and we can simply delete it.
             if (!availableDependency || availableDependency.name === subDependency.name) {
                 hardDependency.dependencies.splice(hardDependency.dependencies.findIndex(dependency => {
                     return dependency.name === subDependency.name;
