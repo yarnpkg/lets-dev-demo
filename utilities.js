@@ -90,7 +90,7 @@ export async function extractArchiveTo(packageBuffer, target, {virtualPath = 0} 
     return new Promise((resolve, reject) => {
 
         function map(header) {
-            header.name = getFileName(header.name, virtualPath);
+            header.name = getFileName(header.name, virtualPath) || header.name;
             return header;
         }
 
